@@ -1,0 +1,9 @@
+.card-image {
+    width: 300px;
+    border-radius: 5%;
+}
+
+.card-title {
+    color: #fff;
+    text-align: center;
+}
