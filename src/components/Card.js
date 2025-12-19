@@ -13,7 +13,6 @@ const Card = ({ blok }) => {
     console.log('title', blok.title)
     console.log('content', blok.content)
 
-    
     return (
         <div {...storyblokEditable(blok)} 
             className="card" 
