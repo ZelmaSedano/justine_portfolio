@@ -9,25 +9,25 @@ const Card = ({ blok }) => {
             ? 'https:' + blok.image.filename
             : null;
 
-    console.log('image', blok.image)
-    console.log('title', blok.title)
-    console.log('content', blok.content)
-
     return (
-        <div {...storyblokEditable(blok)} 
-            className="card" 
-            style={{ backgroundColor: blok.background_color }}
-        >
-            <h3 className='card-title'>{blok.title}</h3>
-            {imageUrl && (
-            <img 
-                src={imageUrl} 
-                alt={blok.title || 'Card image'} 
-                className="card-image"
-            />
-            )}
-            <div className='card-content'>{blok.content}</div>
-        </div>
+        <a className='card-link' href='http://www.facebook.com'>
+
+                <div {...storyblokEditable(blok)} 
+                    className="card" 
+                    style={{ backgroundColor: blok.background_color }}
+                >
+                    <h3 className='card-title'>{blok.title}</h3>
+                    {imageUrl && (
+                        <img 
+                            src={imageUrl} 
+                            alt={blok.title || 'Card image'} 
+                            className="card-image"
+                        />
+                    )}
+                    <div className='card-content'>{blok.content}</div>
+                </div>
+
+        </a>
     );
 };
 

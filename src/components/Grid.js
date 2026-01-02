@@ -3,7 +3,8 @@ import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
 const Grid = ({ blok }) => {
   return (
     <div
-      style={{ display: "flex", justifyContent: "space-around" }}
+      style={{ display: "flex",
+      }}
       {...storyblokEditable(blok)}
       className="grid"
     >
