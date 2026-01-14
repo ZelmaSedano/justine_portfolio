@@ -1,11 +1,10 @@
-
-
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url('/public/tree_elf.jpg');
   background-size: cover;
+  font-family: sans-serif;
 }
 
 code {
